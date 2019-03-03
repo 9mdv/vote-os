@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Pusher Poll</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>OS Vote 💻</h1>
+      <p>Vote for your favorite OS to develop on</p>
+      <form id="vote-form">
+        <p>
+          <label>
+            <input type="radio" name="os" id="windows" value="Windows" />
+            <span>Windows</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="os" id="macos" value="MacOS" />
+            <span>Mac OS</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="os" id="linux" value="Linux" />
+            <span>Linux</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="radio" name="os" id="other" value="Other" />
+            <span>Other</span>
+          </label>
+        </p>
+        <button type="submit" class="btn waves-effect waves-light">Vote 🗳</button>
+      </form>
+
+      <br /><br />
+
+      <div id="chartContainer" style="height: 300px;width: 100%"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/4.4.0/pusher.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
